@@ -1,0 +1,167 @@
+body,html{font-family:QuicksandRegular;margin:0px;height:100vh;color:rgba(0,0,0,0.82);background:white;width: 100vw;overflow-x: auto;overflow-y:hidden;}
+h1,h2,h3,h4,h5,h6,svg,div:focus{outline:none;}
+h1,h2,h3,h4,h5,h6,p{float:left;margin:0px;padding:0px;}
+div,h1,h2,h3,h4,h5,h6,p{position:relative;box-sizing: border-box;}
+div[hidden] {display: none !important;}
+input,textarea{font-family: QuicksandRegular;border:none;padding:0vh;width:100%;}
+input,textarea:focus{outline:none;color:#000;}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{box-shadow: 0 0 0 1000px white inset;border-color: #ededed;}
+@font-face {font-family: 'QuicksandRegular';font-style: normal;font-weight: 300;src: local('assets/fonts/Quicksand-Regular.ttf'), local('assets/fonts/Quicksand-Regular.ttf'), url('assets/fonts/Quicksand-Regular.ttf') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+@font-face {font-family: 'QuicksandRegular';font-style: normal;font-weight: 400;src: local('assets/fonts/Quicksand-Medium.ttf'), local('assets/fonts/Quicksand-Medium.ttf'), url('assets/fonts/Quicksand-Medium.ttf') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+@font-face {font-family: 'QuicksandRegular';font-style: normal;font-weight: 100;src: local('assets/fonts/Quicksand-Light.ttf'), local('assets/fonts/Quicksand-Light.ttf'), url('assets/fonts/Quicksand-Light.ttf') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+@font-face {font-family: 'QuicksandRegular';font-style: normal;font-weight: 600;src: local('assets/fonts/Quicksand-Bold.ttf'), local('assets/fonts/Quicksand-Bold.ttf'), url('assets/fonts/Quicksand-Bold.ttf') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+.px13{font-size:13px;}
+.px14{font-size:14px;}
+.px15{font-size:15px;}
+.px16{font-size:16px;}
+.px20{font-size:20px;}
+::-webkit-scrollbar{width:5px;height:5px;}
+::-webkit-scrollbar-thumb {border-radius: 4px;background-color:#c5c5c5;}
+.brdRad{border-radius: 10px;}
+.pw{cursor:wait;}
+.pt{cursor:pointer;}
+.circle{border-radius:50%;}
+.lw{font-weight:100;}
+.mw{font-weight:300;}
+.hw{font-weight:400;}
+.b{float:left;height: 100%;width: 100%;overflow:hidden;}
+.zBrd{border-width:0px;}
+.brd{border-style:solid;border-color:#ededed;}
+.brd1{border-style:solid;border-color: #0277BD;}
+.brd2{border-style:solid;border-color: #2E7D32;}
+.fBrd{border-width:1px;}
+.lBrd{border-width:0px 0px 0px 1px;}
+.rBrd{border-width:0px 1px 0px 0px;}
+.tBrd{border-width:1px 0px 0px 0px;}
+.bBrd{border-width:0px 0px 1px 0px;}
+.tbBrd{border-width:1px 0px 1px 0px;}
+.trlBrd{border-width:1px 1px 0px 1px;}
+.lbBrd{border-width:0px 0px 1px 1px;}
+.lrBrd{border-width:0px 1px 0px 1px;}
+.trBrd{border-width:1px 1px 0px 0px;}
+.rbBrd{border-width:0px 1px 1px 0px;}
+.tlBrd{border-width:1px 0px 0px 1px;}
+.lrbBrd{border-width:0px 1px 1px 1px;}
+.ltbBrd{border-width:1px 0px 1px 1px;}
+.lm{margin:0vh 0vh 0vh 10px;}
+.rm{margin:0vh 10px 0vh 0vh;}
+.tm{margin:10px 0vh 0vh 0vh;}
+.bm{margin:0vh 0vh 10px 0vh;}
+.lrm{margin:0vh 10px;}
+.btm{margin:10px 0vh;}
+.tlm{margin:10px 0vh 0vh 10px;}
+.trm{margin:10px 10px 0vh 0vh;}
+.rbm{margin:0vh 10px 10px 0vh;}
+.mz{margin:0vh;}
+.p{padding:10px;}
+.lp{padding:0vh 0vh 0vh 10px;}
+.rp{padding:0vh 10px 0vh 0vh;}
+.tp{padding:10px 0vh 0vh 0vh;}
+.bxbp{padding:0vh 0vh 10px 0vh;}
+.lrp{padding:0vh 10px 0vh 10px;}
+.tbp{padding:10px 0vh 10px 0vh;}
+.brp{padding:0vh 10px 10px 0vh;}
+.blp{padding: 0vh 0vh 10px 10px;}
+.zp{padding:0vh;}
+.h{float:left;width:100%;height:auto;}
+.v{float:left;width:auto;height:100%;}
+.vh{float:left;height:auto;width:auto;}
+.leftP{position:absolute;top:0%;z-index:11;height:100%;width:100%;}
+.leftS{left:0%;}
+.leftH{left:100%;}
+
+[layout] {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+[layout=column] {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+[layout=row] {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+[layout-align="center"],
+[layout-align="center center"],
+[layout-align="center start"],
+[layout-align="center end"] {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+[layout-align="end"],
+[layout-align="end center"],
+[layout-align="end start"],
+[layout-align="end end"] {
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+[layout-align="space-around"],
+[layout-align="space-around center"],
+[layout-align="space-around start"],
+[layout-align="space-around end"] {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+[layout-align="space-between"],
+[layout-align="space-between center"],
+[layout-align="space-between start"],
+[layout-align="space-between end"] {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+[layout-align="space-evenly"],
+[layout-align="space-evenly center"],
+[layout-align="space-evenly start"],
+[layout-align="space-evenly end"] {
+    -webkit-justify-content: space-evenly;
+    -ms-flex-pack: justify;
+    justify-content: space-evenly;
+}
+
+[layout-align="center center"],
+[layout-align="start center"],
+[layout-align="end center"],
+[layout-align="space-between center"],
+[layout-align="space-around center"],
+[layout-align="space-evenly center"] {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+[layout-align="center start"],
+[layout-align="start start"],
+[layout-align="end start"],
+[layout-align="space-between start"],
+[layout-align="space-around start"],
+[layout-align="space-evenly start"] {
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+[layout-align="center end"],
+[layout-align="start end"],
+[layout-align="end end"],
+[layout-align="space-between end"],
+[layout-align="space-around end"],
+[layout-align="space-evenly end"] {
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}

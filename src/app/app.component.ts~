@@ -1,0 +1,25 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  
+	slideNumber : any = 0;
+	userArr : any = [{id:'1',name:'ABC',phone:'1234567890',email:'abc@gmail.com'},
+			{id:'1',name:'ABC',phone:'1234567890',email:'abc@gmail.com'},
+			{id:'1',name:'ABC',phone:'1234567890',email:'abc@gmail.com'},
+			{id:'1',name:'ABC',phone:'1234567890',email:'abc@gmail.com'}];
+	albumArr : any = [{userId: '1',id: '1',title: "quidem molestiae enim"}];
+	photoArr : any = [{albumId: '1',id: '2',title: "reprehenderit est deserunt velit ipsam",url: "https://via.placeholder.com/600/771796",thumbnailUrl: "https://via.placeholder.com/150/771796"}];
+
+	constructor(){}
+	
+	expandUser($event,iIndex,iObj){
+		this.slideNumber = 1;
+	}
+}
+
+

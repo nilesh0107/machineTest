@@ -1,0 +1,30 @@
+<div class="b">
+	<div class="h trans" style="width:300%;" [style.margin-left]="(-100 * slideNumber)+'%'">
+		<div class="h" style="width:33.33%;">
+			<div class="h lrp brd bBrd" style="height:45px;" layout="row" layout-align="start center">
+				<!-- <i class="material-icons">arrow_back</i>  -->
+				<h5 class="px15 hw clr e">User List</h5>
+			</div>
+			<div class="h" style="height:calc(100% - 45px);overflow-y:auto;">
+				<div class="h lrp pt" (click)="expandUser($event,index,arr)" style="height:60px;" [ngClass]="{bg1:(i % 2) != 0,bg2:(i % 2) == 0}" *ngFor="let arr of userArr; let i = index">
+				  <div class="v lp" style="width:75px;" layout="row" layout-align="start center">
+				    <h5 class="px14 mw clr e" title="{{arr.id}}">{{arr.id}}</h5>
+				  </div>
+				  <div class="v lrp" style="width:calc(100% - 575px);" layout="row" layout-align="start center">
+				    <h5 class="px14 mw clr e" title="{{arr.name}}">{{arr.name}}</h5>
+				  </div>
+				  <div class="v lp" style="width:250px;" layout="row" layout-align="start center">
+				    <h5 class="px14 mw clr e" title="{{arr.phone}}">{{arr.phone}}</h5>
+				  </div>
+				  <div class="v lp" style="width:250px;" layout="row" layout-align="start center">
+				    <h5 class="px14 mw clr e" title="{{arr.email}}">{{arr.email}}</h5>
+				  </div>
+				</div>	
+			</div>
+		</div>
+		<div class="h" style="width:33.33%;">
+		</div>
+		<div class="h" style="width:33.33%;">
+		</div>
+	</div>
+</div>

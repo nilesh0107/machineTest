@@ -1,0 +1,35 @@
+import { Injectable } from '@angular/core';
+import { HttpClient, Response } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { user } from './user.model';
+import { album } from './album.model';
+import { photo } from './photo.model';
+
+@Injectable()
+export class JsonService {
+	constructor(private http: HttpClient,private response : Response) {}
+
+	getUser(): Observable <user>{
+	    const url = 'https://jsonplaceholder.typicode.com/users';
+	    return this.http.get(url)
+	    .subscribe(
+	    	this.response => console.log(response)
+  	    );
+  	}
+
+	getAlbum(id:string): Observable <album>{
+	    const url = 'https://jsonplaceholder.typicode.com/albums/'+{{id}};
+	    return this.http.get(url)
+	    .subscribe(
+	    	this.response => console.log(response)
+  	    );
+  	}
+
+	getPhotos(id:string): Observable <photo>{
+	    const url = 'https://jsonplaceholder.typicode.com/photos/'+{{id}};
+	    return this.http.get(url)
+	    .subscribe(
+	    	this.response => console.log(response)
+  	    );
+  	} 
+}
